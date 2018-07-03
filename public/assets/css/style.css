@@ -1,0 +1,42 @@
+/*Navigation test*/
+.wrapper {
+    background: #6c757d;
+}
+.grid-container{
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-areas:
+            "logo social login"
+            "logo navbar login";
+}
+
+.grid-container div:nth-child(1){
+    grid-area: logo;
+}
+.grid-container div:nth-child(2){
+    grid-area: social;
+}
+.grid-container div:nth-child(3){
+    grid-area: navbar;
+}
+
+.grid-container div:nth-child(4){
+    grid-area: login;
+}
+
+.brand-logo img{
+    width: 150px;
+}
+
+.social ul li{
+    display: inline;
+    align-items: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    align-items: center;
+}
+
+
