@@ -1,15 +1,19 @@
 /*Navigation test*/
+* {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
-    background: #6c757d;
+    background: transparent;
 }
 
 .grid-container{
     display: grid;
-    max-width: 900px;
+    max-width: 1024px;
     margin: 0 auto;
     grid-template-areas:
-            "logo social  .  login"
-            "logo navbar  .  login";
+            "logo social login"
+            "logo navbar login";
 }
 
 .grid-container div:nth-child(1){
@@ -38,14 +42,24 @@
     align-items: center;
 }
 
-.social ul li{
-    display: inline;
-    align-items: center;
-}
-
-.navbar ul li{
+.social > ul li{
     display: inline-block;
-    align-items: center;
+    align-self: center;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
 
+.social,
+.navbar ul li, a{
+    text-decoration:none;
+    display:inline-flex;
+    padding:2px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+}
