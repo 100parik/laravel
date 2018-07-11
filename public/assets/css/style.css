@@ -1,11 +1,13 @@
 /*Navigation test*/
 .wrapper {
-    background: #6c757d;
+    background: #eff4ff;
 }
 .grid-container{
     display: grid;
-    max-width: 900px;
+    max-width: 1280px;
+    height: 80px;
     margin: 0 auto;
+    grid-template-rows: 25px;
     grid-template-areas:
             "logo social  .  login"
             "logo navbar  .  login";
@@ -34,10 +36,14 @@
     width: 150px;
     align-items: center;
 }
-
-.social ul li{
-    display: inline;
+.social{
     align-items: center;
+    justify-content: left;
+}
+.social ul li{
+    display: inline-block;
+    align-items: left;
+    justify-content: left;
 }
 
 .navbar ul li{
