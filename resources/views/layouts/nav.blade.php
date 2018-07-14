@@ -1,4 +1,5 @@
-<div class="grid-container">
+<div class="wrapper">
+    <div class="grid-container">
     <div class="brand-logo"><img src="/assets/img/logo.png" alt=""></div>
         <div class="social">
             <ul class="socialIcons">
@@ -28,5 +29,6 @@
                 @endauth
             </div>
         @endif
+    </div>
     </div>
 </div>
